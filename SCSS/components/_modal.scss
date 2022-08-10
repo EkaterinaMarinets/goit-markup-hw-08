@@ -1,0 +1,198 @@
+.backdrop {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+
+  transition: opacity 600ms ease-in-out, visibility 600ms ease-in-out;
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  &.is-hidden .modal {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.3) rotate(1turn);
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  width: 528px;
+  height: 581px;
+  background-color: var(--third-txt-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: translate(-50%, -50%) scale(1) rotate(0);
+  opacity: 1;
+  transition: transform 400ms ease-in-out 100ms, opacity 400ms ease-in-out 100ms;
+}
+
+.modal-form {
+  text-align: center;
+
+  &__title {
+    display: block;
+    text-align: center;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    letter-spacing: 0.03em;
+    color: var(--main-txt-color);
+  }
+
+  &__group {
+    margin-bottom: 20px;
+  }
+
+  &__wrap {
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__label {
+    display: block;
+    text-align: left;
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    color: var(--secondary-txt-color);
+  }
+
+  &__input {
+    width: 100%;
+    padding: 11px 11px 11px 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: transparent;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: var(--main-txt-color);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      border: 1px solid var(--accent-color);
+      transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    bottom: 11px;
+    left: 12px;
+    outline: none;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .modal-form__input:hover + &,
+    .modal-form__input:focus + & {
+      fill: var(--accent-color);
+    }
+  }
+
+  &__сomment {
+    resize: none;
+    padding: 12px 16px;
+    height: 120px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    width: 100%;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: transparent;
+
+    color: var(--main-txt-color);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      border: 1px solid var(--accent-color);
+      transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  &__agreement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 30px;
+  }
+
+  &__i-agree {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--secondary-txt-color);
+    user-select: none;
+  }
+}
+
+/* Checkbox start */
+
+.register-icon-uncheck {
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .modal-form__checkbox:checked + .modal-checkmark-icon & {
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.register-icon-check {
+  opacity: 0;
+  fill: var(--third-txt-color);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .modal-form__checkbox:checked + .modal-checkmark-icon & {
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.modal-checkmark-icon {
+  .modal-form__checkbox:checked + & {
+    opacity: 1;
+    background-color: var(--accent-color);
+    transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .modal-form__checkbox + & {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/* Checkbox end */
+
+.agreement-link {
+  text-decoration: underline;
+  text-underline-position: under;
+  color: var(--accent-color);
+}
