@@ -3,15 +3,29 @@
   padding-bottom: 60px;
   background-color: var(--dark-bg-color);
 
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__content {
     display: flex;
-    align-items: baseline;
-    gap: 70px;
+
+    @media screen and (min-width: 1200px) {
+      align-items: baseline;
+      gap: 70px;
+    }
   }
 
   &__connection {
-    display: flex;
-    flex-direction: column;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__logo-united {
@@ -70,22 +84,37 @@
     line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    // text-align: center;
     color: var(--third-txt-color);
   }
 }
 
 .footer-subscribe {
-  display: inline-block;
-  margin-left: auto;
+  // display: block;
+  // align-items: center;
+  // justify-content: center;
+
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+    margin-left: auto;
+  }
 
   &__group {
-    display: flex;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__input {
     width: 358px;
     padding: 15px;
-    margin-right: 12px;
+    margin-bottom: 20px;
+    // margin-right: 12px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -100,5 +129,5 @@
 }
 
 .mail {
-  margin-bottom: 9px;
+  margin-bottom: 9;
 }

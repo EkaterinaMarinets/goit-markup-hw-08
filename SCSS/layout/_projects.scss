@@ -1,13 +1,30 @@
 .projects {
-  padding: 94px 0;
-
   &__list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 94px;
+    }
   }
 
   &__item {
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 60px) / 3);
+    }
+
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
