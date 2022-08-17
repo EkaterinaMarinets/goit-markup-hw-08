@@ -1,6 +1,6 @@
 .menu-btn {
-  z-index: 99;
-  display: flex;
+  z-index: 999;
+  // display: flex;
   position: absolute;
   align-items: center;
   justify-content: center;
@@ -25,18 +25,18 @@
 }
 
 .menu-btn .menu-btn__icon-close {
-  // display: none;
-  opacity: 0;
+  display: none;
+  // opacity: 0;
 }
 
 .menu-btn.is-open .menu-btn__icon-close {
-  // display: block;
-  opacity: 1;
+  display: block;
+  // opacity: 1;
 }
 
 .menu-btn.is-open .menu-btn__icon-open {
-  // display: none;
-  opacity: 0;
+  display: none;
+  // opacity: 0;
 }
 
 .menu__overlay-container {
