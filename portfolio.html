@@ -19,16 +19,63 @@
 
 <body>
   <!-- Header section -->
+
   <header class="header">
     <div class="container header__container">
       <a class="logo" href="/" lang="en">Web<span class="logo logo__accent--dark">Studio</span></a>
+
+      <button class="menu-btn" type="button" aria-label="Кнопка меню" aria-expanded="false"
+        aria-controls="menu-container" data-menu-button>
+        <svg class="menu-btn__icons" width="40" height="40" aria-label="Перемикач мобільного меню">
+          <use class="menu-btn__icon-open" href="./images/icons.svg#icon-menu"></use>
+          <use class="menu-btn__icon-close" href="./images/icons.svg#icon-menu-close"></use>
+        </svg>
+      </button>
+      <!-- Mobile menu -->
+
+      <div class="menu__overlay-container" id="menu-container" data-menu>
+
+        <ul class="menu__nav-list">
+          <li class="menu__nav-item"><a class="menu__link" href="./index.html">Студія</a></li>
+          <li class="menu__nav-item"><a class="menu__link menu__link--acent" href="./portfolio.html">Портфоліо</a></li>
+          <li class="menu__nav-item"><a class="menu__link" href="./index.html">Контакти</a></li>
+        </ul>
+        <ul class="menu__contacts-list">
+          <li class="menu__contact-item">
+            <a class="menu__phone" href="tel:+380991111111">+38 096 111 11 11</a>
+          </li>
+          <li class="menu__contact-item">
+            <a class="menu__mail" href="mailto:info@example.com">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="menu__social-list">
+          <li class="menu__social-item">
+            <a class="menu__social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+              aria-label="instagram">Instagram</a>
+          </li>
+          <li class="menu__social-item">
+            <a class="menu__social-link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer"
+              aria-label="twitter">Twitter</a>
+          </li>
+          <li class="menu__social-item">
+            <a class="menu__social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+              aria-label="facebook">Facebook</a>
+          </li>
+          <li class="menu__social-item">
+            <a class="menu__social-link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+              aria-label="linkedin">linkedin</a>
+          </li>
+        </ul>
+
+      </div>
+
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link " href="./index.html">Студія</a>
+            <a class="nav__link nav__link--accent" href="./index.html">Студія</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link nav__link--accent" href="./portfolio.html">Портфоліо</a>
+            <a class="nav__link" href="./portfolio.html">Портфоліо</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="">Контакти</a>
@@ -295,12 +342,12 @@
               <div class="footer-subscribe__group">
                 <label class="footer-subscribe__email">
                   <input class="footer-subscribe__input" type="email" name="user-email" placeholder="E-mail" />
-                  <button class="footer__btn btn" type="submit">Підписатися
-                    <svg class="footer__btn-icon" width="24" height="24">
-                      <use class="" href="./images/icons.svg#send-email"></use>
-                    </svg>
-                  </button>
                 </label>
+                <button class="footer__btn btn" type="submit">Підписатися
+                  <svg class="footer__btn-icon" width="24" height="24">
+                    <use class="" href="./images/icons.svg#send-email"></use>
+                  </svg>
+                </button>
               </div>
             </form>
           </div>
@@ -308,6 +355,8 @@
       </div>
     </section>
   </footer>
+
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

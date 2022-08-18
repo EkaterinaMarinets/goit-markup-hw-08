@@ -16,9 +16,9 @@
       justify-content: space-between;
     }
 
-    @media screen and (min-width: 479px) and (max-width: 1199px) {
-      padding-right: 75px;
-      padding-left: 75px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding-right: 70px;
+      padding-left: 70px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -34,9 +34,8 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      // margin-left: auto;
-      // margin-right: auto;
     }
+
     @media screen and (min-width: 1200px) {
       display: flex;
       flex-direction: column;
@@ -98,6 +97,12 @@
       flex-direction: column;
       justify-content: flex-start;
     }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__title {
@@ -109,18 +114,14 @@
     text-transform: uppercase;
     color: var(--third-txt-color);
 
-    @media screen and (max-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       text-align: center;
     }
   }
 }
 
 .footer-subscribe {
-  // display: block;
-  // align-items: center;
-  // justify-content: center;
-
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -141,10 +142,6 @@
   }
 
   &__group {
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       display: flex;
       flex-direction: column;
@@ -161,7 +158,6 @@
     width: 358px;
     padding: 15px;
     margin-bottom: 20px;
-    // margin-right: 12px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -176,18 +172,10 @@
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       display: block;
       align-items: center;
-      // margin-left: auto;
-      // margin-right: auto;
     }
-  }
-
-  &__email {
-    // align-items: center;
-    // margin-left: auto;
-    // margin-right: auto;
   }
 }
 
 .mail {
-  margin-bottom: 9;
+  margin-bottom: 9px;
 }

@@ -33,9 +33,8 @@
       <!-- Mobile menu -->
 
       <div class="menu__overlay-container" id="menu-container" data-menu>
-
         <ul class="menu__nav-list">
-          <li class="menu__nav-item"><a class="menu__link" href="./index.html">Студія</a></li>
+          <li class="menu__nav-item"><a class="menu__link menu__link--acent" href="./index.html">Студія</a></li>
           <li class="menu__nav-item"><a class="menu__link" href="./portfolio.html">Портфоліо</a></li>
           <li class="menu__nav-item"><a class="menu__link" href="./index.html">Контакти</a></li>
         </ul>
@@ -65,7 +64,6 @@
               aria-label="linkedin">linkedin</a>
           </li>
         </ul>
-
       </div>
 
       <nav class="nav">
@@ -116,8 +114,7 @@
               </svg>
             </div>
             <h3 class="benefits__title">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p class="benefits__slogan">Ідейні міркування, і навіть початок повсякденної роботи з формування
-              позиції</p>
+            <p class="benefits__slogan">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції</p>
           </li>
           <li class="benefits__item">
             <div class="benefits__logo">
@@ -126,8 +123,7 @@
               </svg>
             </div>
             <h3 class="benefits__title">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="benefits__slogan">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
-            </p>
+            <p class="benefits__slogan">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
           </li>
           <li class="benefits__item">
             <div class="benefits__logo">
@@ -145,8 +141,7 @@
               </svg>
             </div>
             <h3 class="benefits__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p class="benefits__slogan">Значимість цих проблем настільки очевидна, що реалізація планових завдань.
-            </p>
+            <p class="benefits__slogan">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
           </li>
         </ul>
       </div>
@@ -156,16 +151,18 @@
         <h2 class="illustration__title">Чим ми займаємося</h2>
         <ul class="illustration__list">
           <li class="illustration__item">
-            <img class="" src="./images/tablet.jpg" alt="Верстальник пише код" width="370" height="294" />
+            <img srcset="./images/illustration/large-1@1x.jpg 370w, ./images/illustration/large-1@2x.jpg 740w"
+              src="./images/illustration/large-1@1x.jpg" alt="Верстальник пише код" width="370" height="294" />
             <p class="illustration__about">Десктопні додатки</p>
           </li>
           <li class="illustration__item">
-            <img class="" src="./images/phone-notebook.jpg" alt="Вебдизайнер розробляє макет" width="370"
-              height="294" />
+            <img srcset="./images/illustration/large-2@1x.jpg 370w, ./images/illustration/large-2@2x.jpg 740w"
+              src="./images/phone-notebook.jpg" alt="Вебдизайнер розробляє макет" width="370" height="294" />
             <p class="illustration__about">Мобільні додатки</p>
           </li>
           <li class="illustration__item">
-            <img class="" src="./images/color-palette.jpg" alt="Планшет з палітрою кольорів" width="370" height="294" />
+            <img srcset="./images/illustration/large-3@1x.jpg 370w, ./images/illustration/large-3@2x.jpg 740w"
+              src="./images/color-palette.jpg" alt="Планшет з палітрою кольорів" width="370" height="294" />
             <p class="illustration__about">Дизайнерські рішення</p>
           </li>
         </ul>
@@ -176,8 +173,13 @@
         <h2 class="team__members">Наша команда</h2>
         <ul class="team__list">
           <li class="team__item">
-            <img srcset="./images/team/img@1x_l.jpg x1, ./images/team/img@2x_l.jpg x2" src="./images/ihor-img.jpg"
-              alt="Дизайнер продукту" width="270" height="260" />
+            <img srcset="./images/team/small-1@1x.jpg 450w, 
+              ./images/team/small-1@2x.jpg 900, 
+              ./images/team/medium-1@1x.jpg 354w, 
+              ./images/team/medium-1@2x.jpg 708w, 
+              ./images/team/large-1@1x.jpg 270w, 
+              ./images/team/large-1@2x.jpg 540w" sizes="(min-width: 1200px) 270w, (min-width: 768px) 354w, 100vw"
+              src="./images/team/small-1@1x.jpg" alt="Дизайнер продукту" width="450" height="460" />
             <div class="team__content">
               <h3 class="team__name">Ігор Дем'яненко</h3>
               <p class="team__position" lang="en">Product Designer</p>
@@ -218,7 +220,13 @@
             </div>
           </li>
           <li class="team__item">
-            <img class="" src="./images/olga-img.jpg" alt="Фронтенд-розробник" width="270" height="260" />
+            <img srcset="./images/team/small-2@1x.jpg 450w, 
+              ./images/team/small-2@2x.jpg 900, 
+              ./images/team/medium-2@1x.jpg 354w, 
+              ./images/team/medium-2@2x.jpg 708w, 
+              ./images/team/large-2@1x.jpg 270w, 
+              ./images/team/large-2@2x.jpg 540w" sizes="(min-width: 1200px) 270w, (min-width: 768px) 354w, 100vw"
+              src="./images/team/small-2@1x.jpg" alt="Фронтенд-розробник" width="450" height="460" />
             <div class="team__content">
               <h3 class="team__name">Ольга Рєпіна</h3>
               <p class="team__position" lang="en">Frontend Developer</p>
@@ -259,7 +267,10 @@
             </div>
           </li>
           <li class="team__item">
-            <img class="" src="./images/nikolay-img.jpg" alt="Маркетинг" width="270" height="260" />
+            <img
+              srcset="./images/team/small-3@1x.jpg 450w, ./images/team/small-3@2x.jpg 900, ./images/team/medium-3@1x.jpg 354w, ./images/team/medium-3@2x.jpg 708w, ./images/team/large-3@1x.jpg 270w, ./images/team/large-3@2x.jpg 540w"
+              sizes="(min-width: 1200px) 270w, (min-width: 768px) 354w, 100vw" src="./images/team/small-3@1x.jpg"
+              alt="Маркетинг" width="450" height="460" />
             <div class="team__content">
               <h3 class="team__name">Микола Тарасов</h3>
               <p class="team__position" lang="en">Marketing</p>
@@ -300,7 +311,10 @@
             </div>
           </li>
           <li class="team__item">
-            <img src="./images/michail-img.jpg" alt="Дизайнер інтерфейсу користувача" width="270" height="260" />
+            <img
+              srcset="./images/team/small-4@1x.jpg 450w, ./images/team/small-4@2x.jpg 900, ./images/team/medium-4@1x.jpg 354w, ./images/team/medium-4@2x.jpg 708w, ./images/team/large-4@1x.jpg 270w, ./images/team/large-4@2x.jpg 540w"
+              sizes="(min-width: 1200px) 270w, (min-width: 768px) 354w, 100vw" src="./images/team/small-4@1x.jpg"
+              alt="Дизайнер інтерфейсу користувача" width="450" height="460" />
             <div class="team__content">
               <h3 class="team__name">Михайло Єрмаков</h3>
               <p class="team__position" lang="en">UI Designer</p>
@@ -337,6 +351,7 @@
                     </svg>
                   </a>
                 </li>
+              </ul>
             </div>
           </li>
         </ul>
@@ -456,12 +471,13 @@
               <div class="footer-subscribe__group">
                 <label class="footer-subscribe__email">
                   <input class="footer-subscribe__input" type="email" name="user-email" placeholder="E-mail" />
-                  <button class="footer__btn btn" type="submit">Підписатися
-                    <svg class="footer__btn-icon" width="24" height="24">
-                      <use class="" href="./images/icons.svg#send-email"></use>
-                    </svg>
-                  </button>
                 </label>
+                <button class="footer__btn btn" type="submit">
+                  Підписатися
+                  <svg class="footer__btn-icon" width="24" height="24">
+                    <use class="" href="./images/icons.svg#send-email"></use>
+                  </svg>
+                </button>
               </div>
             </form>
           </div>
@@ -482,7 +498,6 @@
         <strong class="modal-form__title">Залиште свої дані, ми вам передзвонимо</strong>
 
         <div class="modal-form__group" role="group">
-
           <label class="modal-form__wrap">
             <span class="modal-form__label">Ім'я</span>
             <input class="modal-form__input" type="text" name="user-name" required placeholder="" />
@@ -512,7 +527,7 @@
         </div>
 
         <label class="modal-form__agreement">
-          <input class="modal-form__checkbox visually-hidden" type="checkbox" name="i-agree" required placeholder="" />
+          <input class="modal-form__checkbox visually-hidden" type="checkbox" name="i-agree" />
           <svg class="modal-checkmark-icon" width="16" height="15">
             <use class="register-icon-uncheck" href="./images/icons.svg#uncheck"></use>
             <use class="register-icon-check" href="./images/icons.svg#check"></use>

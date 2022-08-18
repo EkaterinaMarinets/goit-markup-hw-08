@@ -1,5 +1,5 @@
 .backdrop {
-  z-index: 100;
+  z-index: 1000;
   position: fixed;
   top: 0;
   left: 0;
@@ -30,14 +30,19 @@
   top: 50%;
   left: 50%;
   padding: 40px;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: var(--third-txt-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1) rotate(0);
   opacity: 1;
   transition: transform 400ms ease-in-out 100ms, opacity 400ms ease-in-out 100ms;
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-form {
@@ -145,11 +150,15 @@
 
   &__i-agree {
     font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24 / 14);
+    font-size: 12px;
+    line-height: calc(14 / 12);
     letter-spacing: 0.03em;
     color: var(--secondary-txt-color);
     user-select: none;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+    }
   }
 }
 
