@@ -5,18 +5,12 @@
     gap: 30px;
     padding-bottom: 60px;
 
-    @media screen and (min-width: 768px) {
-      align-items: center;
-      justify-content: center;
-    }
-
     @media screen and (min-width: 1200px) {
       padding-bottom: 94px;
     }
   }
 
   &__item {
-    width: 100%;
     @media screen and (min-width: 768px) {
       flex-basis: calc((100% - 30px) / 2);
     }
@@ -51,6 +45,7 @@
   &__thumb {
     position: relative;
     overflow: hidden;
+    flex-grow: 1;
   }
 
   &__text {
@@ -64,6 +59,10 @@
   }
 
   &__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    //
     padding-top: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
@@ -89,4 +88,9 @@
     letter-spacing: 0.03em;
     color: var(--secondary-txt-color);
   }
+}
+
+.projects__link {
+  display: flex;
+  flex-direction: column;
 }

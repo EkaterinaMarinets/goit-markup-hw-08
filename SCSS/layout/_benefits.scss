@@ -44,7 +44,7 @@
     text-transform: uppercase;
     margin-bottom: 10px;
 
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       text-align: center;
     }
   }
@@ -54,6 +54,6 @@
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
-    color: var(--secondary-txt-color);    
+    color: var(--secondary-txt-color);
   }
 }
