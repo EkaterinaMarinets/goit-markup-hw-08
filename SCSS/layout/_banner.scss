@@ -12,11 +12,11 @@
     padding-bottom: 118px;
     max-width: 480px;
     height: 400px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner/small@1x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner/small@1.jpg);
 
     @media screen and (min-width: 768px) {
       max-width: 768px;
-      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner/medium@1x.jpg);
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner/medium@1.jpg);
     }
 
     @media screen and (min-width: 1200px) {
@@ -24,7 +24,7 @@
       height: 600px;
       padding-top: 200px;
       padding-bottom: 200px;
-      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner/large@1x.jpg);
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner/large@1.jpg);
     }
   }
 

@@ -80,6 +80,10 @@
   color: #212121;
 }
 
+.menu__nav-item {
+  margin-bottom: 30px;
+}
+
 .menu__link {
   color: var(--main-txt-color);
 
@@ -104,6 +108,7 @@
   font-size: 34px;
   line-height: 40px;
   letter-spacing: 0.02em;
+  margin-bottom: 30px;
 }
 
 .menu__phone {
