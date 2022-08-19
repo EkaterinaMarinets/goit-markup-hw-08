@@ -10,21 +10,31 @@
     background-size: cover;
     padding-top: 118px;
     padding-bottom: 118px;
-    max-width: 480px;
-    height: 400px;
+
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner/small@1.jpg);
 
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner/small@2.jpg);
+    }
+
     @media screen and (min-width: 768px) {
-      max-width: 768px;
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner/medium@1.jpg);
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner/medium@2.jpg);
+      }
     }
 
     @media screen and (min-width: 1200px) {
       max-width: 1600px;
-      height: 600px;
+      max-height: 600px;
       padding-top: 200px;
       padding-bottom: 200px;
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner/large@1.jpg);
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner/large@2.jpg);
+      }
     }
   }
 
@@ -38,10 +48,10 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--third-txt-color);
-    width: 360px;
+    max-width: 360px;
 
     @media screen and (min-width: 1200px) {
-      width: 696px;
+      max-width: 696px;
       font-size: 44px;
     }
   }
