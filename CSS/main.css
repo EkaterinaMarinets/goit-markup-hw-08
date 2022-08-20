@@ -1035,7 +1035,6 @@ img {
   .team__item {
     -ms-flex-preferred-size: calc((100% - 90px) / 4);
         flex-basis: calc((100% - 90px) / 4);
-    margin-bottom: 0;
   }
 }
 .team__content {
